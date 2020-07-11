@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{239AD5F1-2EA5-D4E9-2716-C7604DF69591}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Speech Pack/Scripts/Wit3D.cs">
+    <Files>
+      <File FileName="Assets/carController-Plus/carController.cs" Line="40" Column="63" IsPinned="True" />
+      <File FileName="Assets/Scripts/carSelection.cs" />
+      <File FileName="Assets/Speech Pack/Scripts/Wit3D.cs" Line="122" Column="15" />
+      <File FileName="Assets/Speech Pack/Scripts/_Handle.cs" Line="24" Column="6" />
+      <File FileName="Assets/Scripts/gameController.cs" Line="14" Column="5" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ARCAR PERFORMANCE 3D" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="carController-Plus" expanded="True" />
+              <Node name="Scripts" expanded="True" />
+              <Node name="Speech Pack" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="Wit3D.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8502db41-0e4b-4a55-8fd4-b83758f17802" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
