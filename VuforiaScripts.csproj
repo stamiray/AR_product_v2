@@ -329,6 +329,12 @@
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>/Users/i520079/AR/ARCAR PERFORMANCE 3D/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
+    <Reference Include="ChannelPurchase">
+      <HintPath>/Users/i520079/AR/ARCAR PERFORMANCE 3D/Library/PackageCache/com.unity.xiaomi@1.0.3/ChannelPurchase.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityStore">
+      <HintPath>/Users/i520079/AR/ARCAR PERFORMANCE 3D/Library/PackageCache/com.unity.xiaomi@1.0.3/UnityStore.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.23f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
     </Reference>

@@ -30,6 +30,7 @@ public partial class Wit3D : MonoBehaviour {
 			if (theAction.entities.close != null) {
 				foreach (Close aPart in theAction.entities.close) {
 					Debug.Log (aPart.value);
+					carController.instance.triggerAnimation("closeDriversDoor");
 					myHandleTextBox.text = aPart.value;
 					actionFound = true;
 				}
@@ -39,6 +40,7 @@ public partial class Wit3D : MonoBehaviour {
 				foreach (Start aPart in theAction.entities.start)
 				{
 					Debug.Log(aPart.value);
+					carController.instance.playSound();
 					myHandleTextBox.text = aPart.value;
 					actionFound = true;
 				}
@@ -48,6 +50,17 @@ public partial class Wit3D : MonoBehaviour {
 				foreach (Stop aPart in theAction.entities.stop)
 				{
 					Debug.Log(aPart.value);
+					carController.instance.stopSound();
+					myHandleTextBox.text = aPart.value;
+					actionFound = true;
+				}
+			}
+			if (theAction.entities.colour != null)
+			{
+				foreach (Colour aPart in theAction.entities.colour)
+				{
+					Debug.Log(aPart.value);
+					colourSwitcher.instance.colours(aPart.value);
 					myHandleTextBox.text = aPart.value;
 					actionFound = true;
 				}
@@ -94,12 +107,20 @@ public class Stop
 	public string value { get; set; }
 	public string type { get; set; }
 }
+public class Colour
+{
+	public bool suggested { get; set; }
+	public double confidence { get; set; }
+	public string value { get; set; }
+	public string type { get; set; }
+}
 
 public class Entities {
 	public List<Open> open { get; set; }
 	public List<Close> close { get; set; }
 	public List<Start> start { get; set; }
 	public List<Stop> stop { get; set; }
+	public List<Colour> colour { get; set; }
 }
 
 public class RootObject {

@@ -6,6 +6,7 @@ public class carController : MonoBehaviour {
 	
 
 	Animator anim;
+	AudioSource audio;
     public static carController instance;
 	
 	//Create a cloned object so we can access the functions
@@ -45,6 +46,16 @@ public class carController : MonoBehaviour {
 	//Called from _Handle
 	public void showMessage(){
 		//TODO
+	}
+	public void playSound()
+    {
+		audio = GameObject.Find("/UserDefinedTarget-1/activeItems/" + gameController.currentSelectedCar).GetComponent<AudioSource>();
+		audio.Play();
+	}
+	public void stopSound()
+	{
+		audio = GameObject.Find("/UserDefinedTarget-1/activeItems/" + gameController.currentSelectedCar).GetComponent<AudioSource>();
+		audio.Stop();
 	}
 
 }

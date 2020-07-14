@@ -129,6 +129,7 @@
     <Compile Include="Assets\SamplesResources\SceneAssets\VuMarks\Scripts\PanelShowHide.cs" />
     <Compile Include="Assets\SamplesResources\SceneAssets\VuMarks\Scripts\VuMarkHandler.cs" />
     <Compile Include="Assets\SamplesResources\SceneAssets\VuMarks\Scripts\VuMarkTrackableEventHandler.cs" />
+    <Compile Include="Assets\Scenes\colourSwitcher.cs" />
     <Compile Include="Assets\Scripts\carSelection.cs" />
     <Compile Include="Assets\Scripts\gameController.cs" />
     <Compile Include="Assets\Scripts\infoPanelAnimator.cs" />
@@ -187,6 +188,12 @@
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>/Users/i520079/AR/ARCAR PERFORMANCE 3D/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Editor">
+      <HintPath>/Users/i520079/AR/ARCAR PERFORMANCE 3D/Library/ScriptAssemblies/Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="XiaomiSupport">
+      <HintPath>/Users/i520079/AR/ARCAR PERFORMANCE 3D/Library/ScriptAssemblies/XiaomiSupport.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/Users/i520079/AR/ARCAR PERFORMANCE 3D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
@@ -400,6 +407,12 @@
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
       <HintPath>/Users/i520079/AR/ARCAR PERFORMANCE 3D/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="ChannelPurchase">
+      <HintPath>/Users/i520079/AR/ARCAR PERFORMANCE 3D/Library/PackageCache/com.unity.xiaomi@1.0.3/ChannelPurchase.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityStore">
+      <HintPath>/Users/i520079/AR/ARCAR PERFORMANCE 3D/Library/PackageCache/com.unity.xiaomi@1.0.3/UnityStore.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.23f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
