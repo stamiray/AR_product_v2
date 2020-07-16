@@ -75,9 +75,11 @@ public partial class Wit3D : MonoBehaviour {
 	//Custom 2
 	public void startStopRecord(){
 		if (isRecording == true) {
+			carController.instance.resetSound();
 			pressedButton = true;
 			isRecording = false;
  		} else if (isRecording == false) {
+			carController.instance.killSound();
 			isRecording = true;
 			pressedButton = true;
 		}

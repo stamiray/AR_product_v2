@@ -7,6 +7,11 @@ public class carController : MonoBehaviour {
 
 	Animator anim;
 	AudioSource audio;
+	public static int selectedIndex = 0;
+
+	//Inside Start
+	
+
     public static carController instance;
 	
 	//Create a cloned object so we can access the functions
@@ -24,6 +29,7 @@ public class carController : MonoBehaviour {
 			
 			//Check the current selected item and activate
  			if (transform.GetChild (i).gameObject.name == gameController.currentSelectedCar) {
+				selectedIndex = i;
 				transform.GetChild (i).gameObject.SetActive (true);
 
 				//Get the animator componant from the active item
@@ -56,6 +62,16 @@ public class carController : MonoBehaviour {
 	{
 		audio = GameObject.Find("/UserDefinedTarget-1/activeItems/" + gameController.currentSelectedCar).GetComponent<AudioSource>();
 		audio.Stop();
+	}
+	public void killSound()
+    {
+		GameObject.Find(colourSwitcher.instance.getCurrentTracked().name + "/activeItems/" + gameController.currentSelectedCar + "/video").GetComponent<AudioSource>().volume = 0f;
+		GameObject.Find(colourSwitcher.instance.getCurrentTracked().name + "/activeItems/" + gameController.currentSelectedCar).GetComponent<AudioSource>().volume = 0f;
+	}
+	public void resetSound()
+    {
+		GameObject.Find(colourSwitcher.instance.getCurrentTracked().name + "/activeItems/" + gameController.currentSelectedCar + "/video").GetComponent<AudioSource>().volume = 100f;
+		GameObject.Find(colourSwitcher.instance.getCurrentTracked().name + "/activeItems/" + gameController.currentSelectedCar).GetComponent<AudioSource>().volume = 100f;
 	}
 
 }

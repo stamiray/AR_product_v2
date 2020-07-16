@@ -133,6 +133,7 @@
     <Compile Include="Assets\Scripts\carSelection.cs" />
     <Compile Include="Assets\Scripts\gameController.cs" />
     <Compile Include="Assets\Scripts\infoPanelAnimator.cs" />
+    <Compile Include="Assets\Scripts\sidePanel.cs" />
     <Compile Include="Assets\Speech Pack\Scripts\_Handle.cs" />
     <Compile Include="Assets\Speech Pack\Scripts\SavWav.cs" />
     <Compile Include="Assets\Speech Pack\Scripts\Wit3D.cs" />
