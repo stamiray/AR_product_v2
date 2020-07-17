@@ -419,7 +419,7 @@ public partial class Wit3D : MonoBehaviour
 		//options order =open door, close door, start engine, stop engine, colour, windows, show engine, video, bonnet, hood, trunk 
 		{true,true,true,true,true,false,true,true,true,true,true}, //convertlambo
 		{true,true,true,true,true,true,true,true,true,true,true}, //orangeLambo
-		{false,false,true,true,true,false,true,false,true,true,false}, //Police Car
+		{false,false,false,false,false,false,true,false,true,true,false}, //Police Car
 		{true,true,true,true,true,true,true,false,true,true,true} //Tocus
  	};
 
@@ -556,6 +556,30 @@ public partial class Wit3D : MonoBehaviour
 					Debug.Log(aPart.value);
 					if (theAction._text.Contains("close"))
 					{
+						if (theAction._text.Contains("hood"))
+                        {
+							if (aPart.value.Contains("hood"))
+							{
+								carController.instance.triggerAnimation("closeHood");
+								break;
+							}
+						}
+						if (theAction._text.Contains("windows"))
+						{
+							if (aPart.value.Contains("hood"))
+							{
+								carController.instance.triggerAnimation("closeWindows");
+								break;
+							}
+						}
+						if (theAction._text.Contains("trunk"))
+						{
+							if (aPart.value.Contains("hood"))
+							{
+								carController.instance.triggerAnimation("closeTrunk");
+								break;
+							}
+						}
 						switch (aPart.value)
 						{
 							case "hood":
@@ -702,6 +726,14 @@ public partial class Wit3D : MonoBehaviour
 					Debug.Log(aPart.value);
 					if (theAction._text.Contains("stop"))
 					{
+						if (theAction._text.Contains("video"))
+						{
+							if (aPart.value.Contains("engine"))
+							{
+								GameObject.Find(colourSwitcher.instance.getCurrentTracked().name + "/activeItems/" + gameController.currentSelectedCar + "/video").GetComponent<VideoPlayer>().Stop();
+								break;
+							}
+						}
 						switch (aPart.value)
 						{
 							case "engine":
